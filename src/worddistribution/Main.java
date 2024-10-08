@@ -72,10 +72,9 @@ public class Main{
 
         reader.close();
 
-        System.out.println(allWords);
-        
-        
-        
+        EdgeList edges = new EdgeList(allWords);
+
+        System.out.println(edges);
     }
 
 
