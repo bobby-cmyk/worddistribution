@@ -1,8 +1,9 @@
 package worddistribution;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class EdgeList {
+public class EdgeList implements Iterable<Edge>{
     private ArrayList<Edge> edges;
 
     public EdgeList(ArrayList<String> words) {
@@ -15,9 +16,16 @@ public class EdgeList {
         }
     }
 
+
     @Override
     public String toString() {
         return "Number of edges: " + edges.size();
+    }
+
+
+    @Override
+    public Iterator<Edge> iterator() {
+        return edges.iterator(); // Use the iterator of ArrayList
     }
 
 

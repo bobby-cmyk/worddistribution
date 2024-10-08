@@ -74,7 +74,9 @@ public class Main{
 
         EdgeList edges = new EdgeList(allWords);
 
-        System.out.println(edges);
+        Predictor predictor = new Predictor(edges);
+
+        predictor.printNextWordProbabilities("that");
     }
 
 
